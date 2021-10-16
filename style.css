@@ -1,0 +1,440 @@
+.navbar{
+    z-index: 9;
+    margin: 25px 0;
+    margin-left: 15%;
+    margin-right: 20%;
+}
+#carouselExampleCaptions{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.carousel-item{
+    -webkit-background-size:cover ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.btn-info{
+    background-color: purple;
+    border-color: purple;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.btn-info:hover{
+    background-color: grey;
+    border-color: grey;
+}
+.btn-warning{
+    background-color: yellow;
+    border-color:yellow;
+    font-weight: bold;
+    color: black;
+}
+.btn-warning:hover{
+    background-color: grey;
+    border-color: grey;
+}
+header .carousel-inner .item{
+    height: 100vh;
+}
+.navbar-light .navbar-brand{
+    color: white;
+    font-weight:bold;
+    font-size: 2.5rem;
+}
+.carousel-caption{
+    padding-bottom: 200px;
+    padding-left: 5%;
+    text-align: left;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    font-weight:700;
+    font-size: 1rem;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: white;
+    font-weight:700;
+    font-size: 1rem;
+}
+.p-tag-first-slide{
+    font-size: 1rem;
+    padding-top: 20px;
+}
+.p{
+    flex-direction: column;
+}
+.page-top p{
+    margin-left: 10%;
+    font-size: 2rem;
+}
+.container-fluid{
+    padding: 3% 8%;
+}
+#Welcome_Page{
+    background-color: white;
+}
+.wlcm{
+    margin-top: 35%;
+    font-weight: bold;
+    padding-left: 33%;
+    font-size: 50px;
+}
+.m-page{
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.text{
+    align-items: stretch;
+    font-size:1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif'
+}
+.umbrella{
+    margin-left: 10vw;
+    height: 38vh;
+}
+.feature-box{
+    padding: 5%;
+    text-align: left;
+    line-height: 4vh;
+}
+
+.feature-title{
+    font-size: 1.1rem;
+    color: rgb(73, 4, 73);
+    font-weight:bolder;
+    font-family:monospace;
+}
+.container-welcome{
+    padding: 3% 18%;
+}
+.pro{
+    text-align: center;
+    margin-bottom: 2%;
+}
+/* .card-group{
+    margin: 0% 5%;
+} */
+.btn-light{
+    background-color: white;
+    border-color: white;
+}
+.card:hover{
+    background-color:rgb(250, 214, 95);
+}
+.btn-light:hover{
+    background-color: purple;
+    border-color: purple;
+}
+.card{
+    background-color: rgba(233, 231, 231, 0.787);
+}
+.price-content{
+    display: inline-block;
+}
+#pricing-table{
+    text-align: center;
+}
+#pricing-table h1{
+    margin: 4% 0%;
+    font-weight: bolder;
+}
+#pricing-table p{
+    margin: 2% 0;
+}
+#Video-Project{
+    background-color: rgb(102, 15, 143);
+}
+#Video-Project h1{
+    font-weight: bold;
+    color: rgb(247, 242, 242);
+    text-align: center;
+    padding-top: 4% ;
+}
+.vid{
+    width: 25vw;
+    height: 330px;
+    margin-left: 2%;
+}
+#zippy-team h1{
+    text-align: center;
+  }
+  
+  
+  
+  #team{
+    width:100%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+       
+  }
+  
+  
+  .outline{
+    position: relative;
+    width: 50%;
+    margin:auto;
+    padding: 1px;
+    display: flex; 
+  }
+  .outline .box{
+    
+    flex-basis: 31%;
+    position: relative;
+    width:20%;
+    margin: auto;
+    height: 250px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .outline .box:hover{
+    z-index: 1;
+  }
+  .outline .box .imgx{
+    position: absolute;
+    margin: auto;
+    width: 150px;
+    height: 80%;
+  }
+  .outline .box .imgx::before{
+    content: '';
+    clip-path: circle();
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(223, 26, 223);
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+    opacity: 0;
+  
+  }
+  .outline .box:hover .imgx::before{
+    opacity: 1;
+  }
+  
+  .outline .box .imgx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit:cover;
+    clip-path: circle();
+    overflow: hidden;
+   
+    
+  }
+  .outline .box .content{
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    z-index: 1;
+    display: block;
+    padding: 2px;
+    align-items: flex-end;
+  }
+  .outline .box .content h1{
+    color: rgb(243, 241, 241);
+    transition: 0.5s;
+    margin-bottom: 1px;
+    font-size: 23px;
+    transform: translateY(200px);
+  } 
+   .outline .box:hover .content h1{
+    transform: translateY(0);
+    transition-delay: 0.1s;
+  }
+  .outline .box .content p{
+    color: rgb(255, 237, 205);
+    transform: translateY(200px);
+    transition: 0.5s;
+    font-size: 14px;
+  
+  }
+  .outline .box:hover .content p{
+    transform: translateY(0);
+    transition-delay: 0.1s;
+  }
+  .heading {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-family: "Ubuntu";
+    font-weight:bold;
+    font-size: 40px;
+  }
+  .zippylife-sec{
+    background-color:#ecebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+    
+  }
+  .zippylife-sec-main{
+    width: 900px;
+    margin: 10px auto;
+  }
+  .zippylife-sec-main .zippylife-track ul{
+    position: relative;
+    list-style-type: none;
+    height: 450px;
+    width: 900px;
+  }
+  .zippylife-sec-main .zippylife-track ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    opacity: 0;
+    transition:opacity .8s ease;
+  }
+  .zippylife-sec-main .zippylife-track ul li:first-child{
+    opacity: 1;
+  }
+  .zippylife-sec-main .zippylife-track ul li img{
+    margin-left: 10px;
+    width: 98%;
+    height: 80%;
+    object-fit: cover;
+  }
+  .slides{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3px;
+  }
+  .slides a{
+    height: 100px;
+  }
+  .slides a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .zippylife-sec-main .zippylife-track ul li:target{
+    opacity: 1;
+  }
+  .slides a:hover{
+    border: 1.8px solid white;
+  }
+  .newsletter{
+    padding: 65px 75px;
+    background-image: url(img/bridge.jpeg);
+    background-size: cover;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+  }
+  .Email{
+    width: 30%;
+    height: 43px;
+    margin-left: 30%;
+    margin-top: 30px;
+    border: white;
+    border-radius: 5px;
+  }
+  .signup-btn{
+    width: 8%;
+    height: 43px;
+    margin-bottom: 5px;
+  }
+  .contact-page{
+    display: flex;
+  }
+  .contact-form{
+    width: 60%;
+    background-color: rgb(250, 239, 86);
+    height: 700px;
+  }
+  .contact-form h1{
+    margin-left: 50px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  .contact-form form{
+    margin-left: 50px;
+  }
+  .contact-form form input{
+    border: white;
+    width: 250px;
+  }
+  .message{
+    height: 120px;
+  }
+  .send{
+    background-color: rgb(180, 11, 180);
+    width: 250px;
+  }
+  .foot{
+    padding-top: 200px;
+    }
+    .footer__container {
+      background-color: #fcfcfc;
+      position: sticky;
+      left: 0;
+      bottom: 0;
+      height: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: auto;
+      z-index: 1;
+    
+    }
+    
+    #footer__logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    }
+    
+    .footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .footer__link--wrapper {
+    display: flex;
+    }
+    
+    .footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    }
+    
+    .footer__link--items h2 {
+    margin-bottom: 16px;
+    color: rgb(15, 15, 15);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    }
+    
+    .footer__link--items a {
+    color: rgb(24, 23, 23);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: 0.3 ease-out;
+    }
